@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #container > div {
+            display: flex;
+            width: 250px;
+            justify-content: space-evenly;
+            margin-top: 10px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        input {
+            border-radius: 15px;
+            width: 50px;
+            height: 30px;
+            background: linear-gradient(to bottom right, red, yellow);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="slideshowImage" src="1.jpg" alt="">
+        <div>
+            <input type="button" value="play" onclick="play()" id="playing">
+            <input type="button" value="prev" onclick="prev()">
+            <input type="button" value="next" onclick="next()">
+            <input type="button" value="stop" onclick="stop()">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
