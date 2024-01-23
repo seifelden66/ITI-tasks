@@ -1,0 +1,76 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+    height: 90vh;
+    border: 2px solid black;
+}
+
+input[type='submit'] {
+    background: linear-gradient(to right, lightblue, gray);
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    transition: all 300ms;
+}
+
+input[type='submit']:hover {
+    background: linear-gradient(to left, lightblue, gray);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+input[type="text"], input[type="password"] {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 40vw;
+    padding: 10px;
+    font-size: 14px;   
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    color:#777;
+    display: block;
+    margin-bottom: 5px; 
+}
+ 
+
+
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+
+}
+
+.form-control.success input {
+    border-color: green;
+}
+
+.form-control.error input {
+    border-color: red;    
+}
+
+.form-control small{
+    color: red;
+    margin-top: 20px;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
